@@ -120,6 +120,8 @@ module.exports = class XMLStringifier
   elEscape: (str) ->
     ampregex = if @noDoubleEncoding then /(?!&\S+;)&/g else /&/g
     str.replace(ampregex, '&amp;')
+       .replace(/"/g, '&quot;')
+       .replace(/'/g, '&apos;')
        .replace(/</g, '&lt;')
        .replace(/>/g, '&gt;')
        .replace(/\r/g, '&#xD;')
@@ -137,4 +139,3 @@ module.exports = class XMLStringifier
        .replace(/\t/g, '&#x9;')
        .replace(/\n/g, '&#xA;')
        .replace(/\r/g, '&#xD;')
-
