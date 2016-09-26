@@ -1,21 +1,23 @@
 {
-  "name": "xmlbuilder",
+  "name": "xmlbuilder-pcon",
   "version": "8.2.2",
   "keywords": [
     "xml",
     "xmlbuilder"
   ],
   "homepage": "http://github.com/oozcitak/xmlbuilder-js",
-  "description": "An XML builder for node.js",
+  "description": "An XML builder for node.js. Forked to include some additional escaping",
   "author": "Ozgur Ozcitak <oozcitak@gmail.com>",
-  "contributors": [],
+  "contributors": [
+    "Patrick Connelly <patrick@deadlypenguin.com"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/oozcitak/xmlbuilder-js.git"
+    "url": "git://github.com/pcon/xmlbuilder-js.git"
   },
   "bugs": {
-    "url": "http://github.com/oozcitak/xmlbuilder-js/issues"
+    "url": "http://github.com/pcon/xmlbuilder-js/issues"
   },
   "main": "./lib/index",
   "engines": {
